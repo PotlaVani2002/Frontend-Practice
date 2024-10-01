@@ -1,16 +1,15 @@
 window.addEventListener('resize', function() {
     const myDiv = document.getElementById('mobile');
-    const myClose=this.document.getElementById('close')
+    const myClose=this.document.getElementById('close');
     if (window.innerWidth <= 799) {
         myDiv.style.display = 'block';
         myClose.style.display='block';
-    } else {
+    } 
+    else {
         myDiv.style.display = 'none';
         myClose.style.display = 'none';
     }
 });
-
-window.dispatchEvent(new Event('resize'));
 
 const bar=document.getElementById('bar');
 const close=document.getElementById('close');
@@ -25,3 +24,4 @@ if(close){
         nav.classList.remove('active');
     })
 }
+window.dispatchEvent(new Event('resize'));
