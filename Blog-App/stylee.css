@@ -186,8 +186,7 @@ nav button{
 .post__author{
     display:flex;
     gap:1rem;
-    margin-top: 1.2rem;
-    
+    margin-top: 1.2rem; 
 }
 .post__author-avatar{
     width:2.5rem;
@@ -198,8 +197,7 @@ nav button{
 
 /* Featured */
 .featured{
-    margin-top: 8rem;
-    
+    margin-top: 8rem; 
 }
 .featured__container{
     display: grid;
@@ -216,7 +214,9 @@ nav button{
     gap:5rem;
     margin-bottom: 5rem;
 }
-
+.post__author-info h5{
+    margin:1.5px;
+}
 /* category-button */
 .category__buttons{
     padding:4rem 0;
@@ -267,6 +267,8 @@ footer{
 footer h4{
     color:var(--color-white);
     margin-bottom: 0.6rem;
+    margin-left:10px;
+    padding: 0 25px;
 }
 footer ul li{
     padding:0.4rem 0;
@@ -288,8 +290,7 @@ footer ul:hover{
 /* Media Queries (Medium Devices */
 @media screen and (max-width:1024px){
    .container{
-    width:var(--container-width-md);
-
+     width:var(--container-width-md);
    }
    h2{
     font-size:1.6rem;
@@ -383,17 +384,55 @@ footer ul:hover{
     }
     .featured__container{
         gap:3rem;
+        align-items: center;
+        h2{
+            font-size:1.5rem;
+        }
     }
     .posts__container{
         grid-template-columns: 1fr 1fr;
         gap:3rem;
     }
+    .post__author{
+        h5{
+            margin:1.5px;
+        }
+    }
     .footer__container{
         grid-template-columns: 1fr 1fr;
-     
+        
     }
     footer h4{
         margin:10px;
         padding: 0 25px;
+    }
+
+}
+
+/* Media Queries for small devices */
+@media screen and (max-width:600px){
+    body{
+        padding:0;
+        margin:0;
+    }
+    .featured__container{
+        display:flex;
+        flex-direction: column;
+        gap:0.5rem;
+    }
+    .posts__container{
+        grid-template-columns: 1fr;
+        gap:3rem;
+    }
+    .post__author{
+        display:flex;
+        align-items: center;
+        justify-content:flex-start; 
+        gap:1rem;       
+    }
+    .post__author-info{
+        h5{
+            margin:1.5px;
+        }
     }
 }
