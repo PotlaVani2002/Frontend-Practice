@@ -262,13 +262,11 @@ footer{
 
 .footer__container{
     display:grid;
-    grid-template-columns: repeat(4,1fr);
-
+    grid-template-columns: repeat(4, 1fr);  
 }
 footer h4{
     color:var(--color-white);
     margin-bottom: 0.6rem;
-
 }
 footer ul li{
     padding:0.4rem 0;
@@ -335,12 +333,31 @@ footer ul:hover{
     box-shadow: -2rem 3rem 7rem rgba(0,0,0,0.7);
     background:var(--color-gray-900);
     border-top: 1px sloid var(--color-bg);
+    animation:animationDropdown 400ms 0s ease forwards;
+    opacity:0;
+    transform-origin: top;
    }
-
+    .nav__items li:nth-child(2){
+        animation-delay: 200ms;
+    }
+    .nav__items li:nth-child(3){
+        animation-delay: 400ms;
+    }
+    .nav__items li:nth-child(4){
+        animation-delay: 600ms;
+    }
+    .nav__items li:nth-child(5){
+        animation-delay: 800ms;
+    }
+    
    /* Nav Dropdown Animation */
    @keyframes animationDropdown {
     0%{
         transform:rotateX(90deg);
+    }
+    100%{
+        transform:rotateX(0deg);
+        opacity:1;
     }
     
    }
@@ -363,5 +380,20 @@ footer ul:hover{
     .nav__profile .avatar{
         margin-left: 2rem;
         border:0;
+    }
+    .featured__container{
+        gap:3rem;
+    }
+    .posts__container{
+        grid-template-columns: 1fr 1fr;
+        gap:3rem;
+    }
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+     
+    }
+    footer h4{
+        margin:10px;
+        padding: 0 25px;
     }
 }
