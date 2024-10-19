@@ -368,7 +368,7 @@ footer ul:hover{
 .form__section{
     display:grid;
     place-items: center;
-    height:100vh;
+   
 }
 .form__section-container{
     width:var(--form-width);
@@ -395,6 +395,11 @@ form{
     display:flex;
     flex-direction: column;
     gap:0.4rem;
+}
+.form__control2{
+    display:flex;
+    gap:0.5rem;
+    align-items: center;
 }
 input, textarea,select{
     padding:0.8rem 1.4rem;
@@ -542,9 +547,6 @@ input, textarea,select{
         padding: 3rem;
         width:100%;
     }
-    .form__section{
-        height:100vw;
-    }
     
 }
 
@@ -588,4 +590,5 @@ input, textarea,select{
         padding:0.5rem 2rem;
         background:transparent;
     }
+    /* Add-user page */
 }
