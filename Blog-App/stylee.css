@@ -55,7 +55,9 @@ body{
 section{
     margin-top:3rem;
     width:100vw;
-
+}
+.section__extra-margin{
+    margin-top: 7rem;
 }
 h1,h2,h3,h4,h5{
     color:var(--color-white);
@@ -383,6 +385,9 @@ footer ul:hover{
 .alert__message.success{
     background:var(--color-green-light);
     color:var(--color-green);
+}
+.alert__message.lg{
+    text-align: center;
 }
 .alert__message.error{
     background:var(--color-red-light);
