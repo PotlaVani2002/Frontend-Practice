@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "D:/React"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../React-Practice"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Frontend-Practice"
+	}
+}
